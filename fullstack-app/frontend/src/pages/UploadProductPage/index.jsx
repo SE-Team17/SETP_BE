@@ -4,13 +4,13 @@ import axiosInstance from '../../utils/axios';
 import { useNavigate } from 'react-router-dom';
 import FileUpload from '../../components/FileUpload';
 const continents = [
-  { key: 1, value: 'Africa' },
-  { key: 2, value: 'Europe' },
-  { key: 3, value: 'Asia' },
-  { key: 4, value: 'North America' },
-  { key: 5, value: 'South America' },
-  { key: 6, value: 'Australia' },
-  { key: 7, value: 'Antarctica' },
+  { key: 1, value: '여성 상의' },
+  { key: 2, value: '여성 하의' },
+  { key: 3, value: '남성 상의' },
+  { key: 4, value: '남성 하의' },
+  { key: 5, value: '여성 잡화' },
+  { key: 6, value: '남성 잡화' },
+  { key: 7, value: '기타' },
 ]
 
 
@@ -96,7 +96,7 @@ const UploadProductPage = () => {
         </div>
 
         <div className='mt-4'>
-          <label htmlFor='continents'>지역</label>
+          <label htmlFor='continents'>카테고리</label>
           <select
             className='w-full px-4 py-2 mt-2 bg-white border rounded-md'
             name='continents' id='continents' onChange={handleChange} value={product.continents}
